@@ -1,0 +1,17 @@
+{
+  "name": "job-queue-lab",
+  "private": true,
+  "type": "module",
+  "description": "In-memory scheduler vs a durable Postgres job queue — sysdesign prompt 7",
+  "scripts": {
+    "before": "tsx before.ts",
+    "after": "tsx after.ts"
+  },
+  "dependencies": {
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.10",
+    "tsx": "^4.19.2"
+  }
+}

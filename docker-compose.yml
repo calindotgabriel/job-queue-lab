@@ -1,0 +1,11 @@
+# Throwaway Postgres for the job-scheduler lab. tmpfs -> wiped on `down`.
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: lab
+      POSTGRES_DB: lab
+    ports:
+      - "5434:5432" # 5434 to dodge other local Postgres / the other labs
+    tmpfs:
+      - /var/lib/postgresql/data
